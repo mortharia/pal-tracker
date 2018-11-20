@@ -4,6 +4,8 @@ applications:
   path: build/libs/pal-tracker.jar
   routes:
     - route: pal-tracker-bdx01.apps.eu01.cf.canopy-cloud.com
+  services:
+  - tracker-database
   env:
     WELCOME_MESSAGE: Hello from the review environment
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
